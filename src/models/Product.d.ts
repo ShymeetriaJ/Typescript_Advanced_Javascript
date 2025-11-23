@@ -6,7 +6,7 @@ export declare class Product {
     price: number;
     discountPercentage: number;
     defaultTax: number;
-    constructor(id: number, title: string, description: string, category: string, price: number, discountPercentage: number, defaultTax?: number);
+    constructor(id: number, title: string, description: string, category: string, price: number, discountPercentage: number, defaultTax: number);
     displayDetails(): string;
     getPriceWithDiscount(): string;
     calculateDiscount(): string;

@@ -1,4 +1,4 @@
-export class Product {
+ export class Product {
     id: number;
     title: string;
     description: string;
@@ -7,7 +7,7 @@ export class Product {
     discountPercentage: number;
     defaultTax: number = 4.75;
 
-    constructor(id: number, title: string, description: string, category: string, price: number, discountPercentage: number, defaultTax: number = 4.75) {
+    constructor(id: number, title: string, description: string, category: string, price: number, discountPercentage: number, defaultTax: number) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -27,20 +27,14 @@ export class Product {
     calculateDiscount(): string {
     const discountTotal = this.price * (this.discountPercentage /100);
     return `Your discount amount is $${discountTotal.toFixed(2)}`;
-}
+    }
     calculateTax(): string {
-        if this.category === "groceries"
-        const taxAmount = this.price * (0.03)/100;
+        if (this.category === "groceries") {
+        const taxAmount = this.price * (3)/100;
         const finalPrice = this.price + taxAmount;
-        return `Your tax cost is $${finalPrice.toFixed(2)}`;
-        
-        return `Your tax cost is $${finalPrice.toFixed(2)}`;
+        return `Your tax cost is $${finalPrice.toFixed(2)}`;}
         else { 
         const taxAmount = this.price * (this.defaultTax /100);
         const finalPrice = this.price + taxAmount;
-        return `Your tax cost is $${finalPrice.toFixed(2)}`;
-
-          }
-    
-    }
-}
+        return `Your tax cost is $${finalPrice.toFixed(2)}`;}   
+      }}
