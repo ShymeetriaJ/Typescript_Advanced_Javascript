@@ -14,7 +14,7 @@
         this.category = category;
         this.price = price;
         this.discountPercentage = discountPercentage;
-        this.defaultTax = 4.75;
+        this.defaultTax = defaultTax;
     }
     displayDetails(): string {
         return `${this.id} is called ${this.title} described as ${this.description} found in ${this.category} and costs $${this.price} but is discounted at ${this.discountPercentage}%, with a tax rate of ${this.defaultTax}.`
