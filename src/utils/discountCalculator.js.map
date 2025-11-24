@@ -1,1 +1,1 @@
-{"version":3,"file":"discountCalculator.js","sourceRoot":"","sources":["discountCalculator.ts"],"names":[],"mappings":""}
+{"version":3,"file":"discountCalculator.js","sourceRoot":"","sources":["discountCalculator.ts"],"names":[],"mappings":"AAAE,SAAS,oBAAoB;IACvB,MAAM,cAAc,GAAG,IAAI,CAAC,KAAK,GAAG,CAAC,IAAI,CAAC,kBAAkB,GAAE,GAAG,CAAC,CAAC;IACnE,MAAM,UAAU,GAAG,IAAI,CAAC,KAAK,GAAG,cAAc,CAAC;IAC/C,OAAO,UAAU,CAAA;AACrB,CAAC"}

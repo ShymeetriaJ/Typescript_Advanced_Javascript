@@ -16,7 +16,7 @@ export class Product {
         this.defaultTax = defaultTax;
     }
     displayDetails() {
-        return `${this.id} is called ${this.title} described as ${this.description} found in ${this.category} and costs $${this.price} but is discounted at ${this.discountPercentage}%, with a tax rate of ${this.defaultTax}.`;
+        return `${this.id} is called ${this.title} described as ${this.description} found in ${this.category} and costs $${this.price.toFixed(2)} but is discounted at ${this.discountPercentage}%, with a tax rate of ${this.defaultTax}%.`;
     }
     getPriceWithDiscount() {
         const discountAmount = this.price * (this.discountPercentage / 100);

@@ -24,7 +24,7 @@ export async function fetchDisplayDetails(id: number = 1): Promise<{
     const data = (await response.json()) as ProductData;
     console.log(data)
   
-    if (!data.id || !data.title || !data.description || !data.category || !data.price || !data.discountPercentage || !data.defaultTax) {
+    if (data.id == null || data.title == null || data.description == null|| data.category == null || data.price == null || data.discountPercentage == null || data.defaultTax == null) {
       throw new DataError("Invalid product data");
     }
 
